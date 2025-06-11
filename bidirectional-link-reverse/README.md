@@ -263,6 +263,7 @@ Check the results
     kafka-mirrors --bootstrap-server leftKafka:19092 \
     --describe --topics product
 ```
+If the status shows "PENDING_STOPPED" or "PENDING_MIRROR", it may be caused because there is an active consumer on source side.
 
 Producer produces to left cluster
 ```shell
